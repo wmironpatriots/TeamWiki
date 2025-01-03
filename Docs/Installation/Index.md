@@ -24,4 +24,11 @@ The FRC game tools allow you to actually run code on the robot using your laptop
 
 * [install the game tools](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/frc-game-tools.html)
 
-# Once you finish this, try out the first [exercise](../Tutorials/Tutorial-01/Index.md)
+## Once you finish Installing
+If you're completely new to programming, you should probably check out [this list of java learning resources](../Java/Index.md)
+
+If you're somewhat familiar with programming, you can checkout this [java for python programmers guide (it works if you know other langs too I tink :P)](https://runestone.academy/ns/books/published/java4python/index.html)
+
+If you've programmed before or used java before, you don't have to check out the resources, however I recommend you use [w3schools](https://www.w3schools.com/java/) if you need help with a concept or two
+
+# Next: [Codebase Hierarchy and WPIlib basics](../CodebaseHierarchy/Index.md)
