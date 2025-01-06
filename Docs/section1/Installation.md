@@ -2,11 +2,12 @@
 
 Lets install everything you'll need
 
-### WPIlib (Required)
+### WPIlib 2025 (Required)
 <img src="./assets/WPIlibLogo.png" alt="drawing" width="200"/>
 
 An important library that handles low level hardware interactions. You can follow this guide to install it
 * https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html
+#### __NOTE: if you've already installed WPIlib, you need to update it. Just install it again__
 
 ### Git (Required)
 <img src="./assets/git.CEFqns8T_Z14EII4.webp" alt="drawing" width="300"/>
