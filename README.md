@@ -18,4 +18,4 @@ To get started with these resources, checkout the [installation guide](./Docs/In
   * [An introduction to WPIlib](./Docs/section1/wpilibIntro.md)
   * [An introduction to Git]()
   * [Exercise 01 - Tank Drive robot /w logging]()
-* [2 ~ Control Systems]()
+* [2 ~ Control Systems (Releasing Later this week!)]()

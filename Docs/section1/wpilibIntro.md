@@ -1,4 +1,5 @@
 ## An Introduction to WPIlib
+###### Note: YOU ARE NOT EXPECTED TO MEMORIZE THIS, This is only supposed to get you thinking like a good FRC programmer
 ###### Sit down with some coffee, this is a big read
 
 WPIlib is a general purpose FRC library that allows FRC teams to focus on game specific code without worrying about hardware details.
@@ -31,21 +32,116 @@ Great question, here's a quick diagram and rundown
 <img src="./assets/ss4.png" alt="drawing" width="800"/>
 
 * `Robot.java` Wraps the whole thing together, takes actions from subsystems and binds them to controller
-* `Intake.java, Drive.java, & Shooter.java` Subsystems; Parts of the robot (We'll talk about this a little bit more in the Commands section)
+* `Intake.java, Drive.java, & Shooter.java` Subsystems; Parts of the robot
 * `Constants.java` Holds values that don't change, motor IDs. If you have a value you use in a lot of places and change a lot, you put it here.
 
 It can be hard to grasp your head around this, but as you read more and program more you'll understand it better.
 
-### Command Based programming
+### Subsystem Class
 ---
-Commands Based programming is a programming architecture created by WPIlib. It exists for teams to write more efficient and safe code. 
-
 The entirety of your FRC robot (often refered to as the superstructure) contains things called subsystems. These are groups of components that work together to do something. Some examples of subsystems on our 2024 & 2023 robot:
 * The shooter subsystem (2024); has 2 motors running at high speeds
 * The climber subsystem (2024); has 2 motors running the climber up and down
 * The arm subsystem (2023); has one motor controlling the entire pivoting arm (yikes)
 
 These can be compared to a human, where the robot is the body and the subsystems are the parts that compose the body
+
+Here's an example subsystem file, aka a subsystem class 
+```Java
+// Climber.java
+public class Climber extends SubsystemBase {
+
+    // This is the constructor
+    // code in here runs when
+    // you initalize this subsystem
+    public Climber() {
+        ...
+    }
+
+    // * ----- METHODS -----
+    // Under this line, you have methods
+    // Methods are code snippets that
+    // run when called. These are
+    // also known as functions
+
+    // A getter for climber height
+    public double getClimberHeight() {
+        ...
+    }
+
+    // A setter for climber voltage
+    public void runClimberVolts(double volts) {
+        ...
+    }
+
+}
+```
+##### __Constructor__
+The constructor is where you initalize all hardware and global variables
+Here's how you would setup the climber motor object
+```Java
+
+// We put an m_ at the start of hardware objects and global variables in here
+private final SparkMax m_climberMotor;
+
+public Climber() {
+    // kClimberMotor is from Constants
+    m_climberMotor = new SparkMax(kClimberMotor, MotorType.kBrushless);
+}
+
+```
+
+##### __Methods__
+Methods are snippets of code that run when called. These are also called functions
+
+There are two types of methods that you need to take note of:
+* `Getters` These get a value and return it. you usally call this when you want to give the value to a variable, like `double currentClimberHeight = Climber.getClimberHeight();`
+* `Setters` These are when you want to set a value in the subsystem. In this case, we set the voltage input for the climber motor
+
+methods belong to the class where it's definined in
+
+you can run a method like this
+```Java
+
+// A method for climber voltage
+public void runClimberVolts(double volts) {
+    ...
+}
+
+// If you're inside the subsystem class that owns the method, you call it like this
+runClimberVolts(10);
+
+// If you're inside a different subsystem class or Robot class, you call it like this
+climber.runClimberVolts();
+```
+If you don't know java well this may seem confusing, but you'll understand this concept more as you go through the exercises 
+
+### Robot Class
+---
+Here's an example of the Robot class.
+```Java
+// Climber.java
+public class Robot extends LoggedRobot {
+
+    // Creates new climber object
+    private final Climber climber;
+
+    // Robot constructor; runs when robot turns on
+    public Robot() {   
+        // initalizes climber subsystem
+        climber = new Climber();
+
+        // Runs when robot boots
+        climber.runClimberVolts(10);
+    }
+
+}
+```
+Every subsystem must be initalized like this
+
+### Command Based programming
+---
+Commands Based programming is a programming architecture created by WPIlib. It exists for teams to write more efficient and safe code. 
 
 The subsystems of our robot are the 'nouns' of our robot, what it is. If they are nouns, Commands are the 'verbs' of our robot. The actions it can take. Each command can use multiple subsystems. If I had a command that shot a note while the robot was climbing, I could combine a command that shoots a note and a command that climbs up to make a new one. Subsystems can only be used by one command at a time, preventing subsystems from trying to do two things at the same time. This is why commands are safe, they prevent things like 2 bits of code trying to make the motor go in different directions at the same time
 
@@ -69,7 +165,7 @@ The anatomy of a command is outlined below
  *  '() -> shooter.runFlywheels()'
  *  This is something called a "lambda", you don't need to understand what
  *  it is, just know that if you want to put code into a command (in this
- *  case, a function) you would put '() -> function'
+ *  case, a function/method) you would put '() -> function'
  * Argument 2
  *  'shooter'
  *  This argument takes in the subsystems that this command uses. In this
@@ -81,6 +177,19 @@ Commands.run(() -> shooter.runFlywheels(), shooter);
 Commands.runOnce(() -> {
     System.out.println("Hello World");
 });
+```
+
+If you're inside a subsystem you can create a command like this
+
+```java
+public void retractArm() {
+    ...
+}
+
+// Notice how you use 'this' instead of 'Commands'
+// and you do 'retractArm()' instead of 
+// 'arm.retractArm()'
+this.runOnce(() -> retractArm());
 ```
 
 #### __Using Commands__
