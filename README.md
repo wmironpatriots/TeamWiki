@@ -10,7 +10,7 @@ If this guide is too fast for you feel free to ask more questions from me.
 * dabeycorn (discord)
 
 ### Quick Start
-Start here [Installation](./Docs/section1/Installation.md)
+Start here -> [Installation](./Docs/section1/Installation.md)
 
 ### Contents
 * [1 ~ Getting Started](./Docs/section1/index.md)
