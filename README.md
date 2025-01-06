@@ -9,13 +9,10 @@ If this guide is too fast for you feel free to ask more questions from me.
 * Dasun20202020@hotmail.com
 * dabeycorn (discord)
 
-### Quickstart
-To get started with these resources, checkout the [installation guide](./Docs/Installation/Index.md)
-
 ### Contents
 * [1 ~ Getting Started](./Docs/section1/index.md)
   * [Installation](./Docs/section1/Installation.md)
   * [An introduction to WPIlib](./Docs/section1/wpilibIntro.md)
   * [An introduction to Git]()
   * [Exercise 01 - Tank Drive robot /w logging]()
-* [2 ~ Control Systems (Releasing Later this week!)]()
+* 2 ~ Control Systems (Releasing later this week!)
