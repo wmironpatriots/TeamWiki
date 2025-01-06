@@ -13,4 +13,4 @@ If this guide is too fast for you feel free to ask more questions from me.
 * [1 ~ Getting Started](./Docs/section1/index.md)
   * [Installation](./Docs/section1/Installation.md)
   * [An introduction to WPIlib](./Docs/section1/wpilibIntro.md)
-  * [Exercise 01 - Tank Drive robot /w logging (Releasing Tomorrow]()
+  * [Exercise 01 - Tank Drive robot /w logging (Releasing 1/5/25)]()
