@@ -9,9 +9,6 @@ If this guide is too fast for you feel free to ask more questions from me.
 * Dasun20202020@hotmail.com
 * dabeycorn (discord)
 
-### Quickstart
-To get started with these resources, checkout the [installation guide](./Docs/Installation/Index.md)
-
 ### Contents
 * [1 ~ Getting Started](./Docs/section1/index.md)
   * [Installation](./Docs/section1/Installation.md)
