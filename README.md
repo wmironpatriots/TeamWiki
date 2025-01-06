@@ -15,4 +15,4 @@ If this guide is too fast for you feel free to ask more questions from me.
   * [An introduction to WPIlib](./Docs/section1/wpilibIntro.md)
   * [An introduction to Git]()
   * [Exercise 01 - Tank Drive robot /w logging]()
-* [2 ~ Control Systems]()
+* [2 ~ Control Systems (Releasing later this week!)]()
