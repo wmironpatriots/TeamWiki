@@ -262,6 +262,9 @@ public Command intakeSpitCmd() {
 }
 
 ```
+Here are some resources if you want to learn more
+* https://docs.wpilib.org/en/stable/docs/software/commandbased/index.html
+DM me with any questions
 
 # That was a lot, take a break and continue later lol
 # Next: Exercise 1 (coming soon)
