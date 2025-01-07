@@ -18,3 +18,4 @@ Start here -> [Installation](./Docs/section1/Installation.md)
   * [An introduction to WPIlib](./Docs/section1/wpilibIntro.md)
   * [Git Basics](./Docs/section1/gitIntroduction.md)
   * [Exercise 01 - Tank Drive robot /w logging (Releasing 1/6/25)]()
+* [2 ~ Control Systems (Releasing 1/10/25]
