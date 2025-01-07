@@ -1,4 +1,4 @@
-## 6423 Training Docs
+## 6423 Training Docs 1.0.0
 A set of resources for getting started with FRC software
 
 ### Preface
