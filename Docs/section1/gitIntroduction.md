@@ -1,4 +1,5 @@
 ## Git Basics
+###### Note: This is more of an unpolished guide, prolly gets the job done tho
 git - the stupid content tracker
 
 Git is a versioning tool that allows us to keep track of changes in our code
