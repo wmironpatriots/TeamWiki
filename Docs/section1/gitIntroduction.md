@@ -60,6 +60,27 @@ If you want to read and understand more about git and branching with git, you ca
 !TODO add github desktop instructions
 You do not have to remember these, however you will be using these commands while writing code.
 
+#### __Authing git__
+Follow this tutorial to auth git
+https://mgimond.github.io/Colby-summer-git-workshop-2021/authenticating-with-github.html
+
+#### __Cloning Code__
+The code exists on github, we want to download it on to your computer
+you use git clone for this. Once you have the repo link, the command looks like this
+
+```bash
+# Replace this url with whatevs
+git clone https://github.com/FIRSTTeam6423/CompetitionRewrite2024.git
+```
+
+#### __Pulling code__
+Your downloaded code will not automatically update from github
+you need to pull your code if you want to see changes that were uploaded
+
+```bash
+git pull
+```
+
 #### __Commits__
 ```bash
 # Selects all changed files
@@ -68,3 +89,24 @@ git add --all
 # Your account will automatically 
 git commit -m "Commit message"
 ```
+
+#### __Viewing branches__
+```bash
+# Gets all branches from github
+git fetch
+# Opens branchName
+git checkout branchName
+# Creates branch called wahWah based on the branch you're currently on
+git branch wahWah
+# See what branch you're on
+git branch
+```
+
+#### __Pushing Changes__
+```bash
+git push
+# if you have merge conflicts it won't do it and it'll spew out a lot of text
+# tell me if that happens
+```
+
+# Next: Exercise 1

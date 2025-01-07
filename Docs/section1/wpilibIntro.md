@@ -267,4 +267,4 @@ Here are some resources if you want to learn more
 DM me with any questions
 
 # That was a lot, take a break and continue later lol
-# Next: Exercise 1 (coming soon)
+# Next: [Git Basics](./gitIntroduction.md)
