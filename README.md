@@ -12,7 +12,7 @@ If this guide is too fast for you feel free to ask more questions from me.
 ### Quick Start
 Start here -> [Installation](./Docs/section1/Installation.md)
 
-### Contents
+### Table of Contents
 * [1 ~ Getting Started](./Docs/section1/index.md)
   * [Installation](./Docs/section1/Installation.md)
   * [An introduction to WPIlib](./Docs/section1/wpilibIntro.md)
