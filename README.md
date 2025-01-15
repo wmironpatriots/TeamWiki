@@ -17,14 +17,14 @@ Start here -> [Installation](./Docs/section1/Installation.md)
   * [Installation](./Docs/section1/Installation.md)
   * [An introduction to WPIlib](./Docs/section1/wpilibIntro.md)
   * [Git Basics](./Docs/section1/gitIntroduction.md)
-* [2 ~ Control Systems (Releasing 1/10/25)]
+  * [Exercise 01 - Tank Drive robot /w logging](./Docs/section1/exercise1.md)
+* [2 ~ Control Systems]
   * [Intro to Control Systems]
-  * [Exercise 01 - Tank Drive robot /w logging]
-  * [Closed and Open loop control]
+  * [Open and Closed loop control]
   * [Motion Profiling]
   * [More Types of Controllers]
   * [Filters]
   * [Exercise 01 - Arm Robot]
 * [3 - Autons, traj gen, & swerve optmization (Releasing 1/17/25)]
-  * [An introduction to Swerve]
-  * [Choreo]
+  <!-- * [An introduction to Swerve]
+  * [Choreo] -->

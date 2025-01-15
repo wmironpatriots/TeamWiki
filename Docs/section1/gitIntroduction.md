@@ -110,4 +110,4 @@ git push
 # tell me if that happens
 ```
 
-# Next: Exercise 1
+# [Next: Exercise 1](./exercise1.md)
