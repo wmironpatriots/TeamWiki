@@ -1,7 +1,16 @@
-## 6423 Training Docs 1.0.0
-A set of resources for getting started with FRC software
+## 6423 Team Docs
+A set of resources for team 6423
 
 ### Preface
+These docs are split into 2 parts.
+* Training docs (Documentation, guides, and exercises for rookie members)
+* General docs (General information)
+
+The training documentation of this repository exists to train rookies, it should be used to train rookies alongside offseason training
+The current programming lead is in charge of maintaining this repository. Please try and keep it fresh.
+
+
+<!--### Preface
 The majority of FRC programming comes down to your ability to learn and use online documentation and resources. This guide won't grab your hand and guide you through everything, instead it will give you a good understanding of the basics and the resources that you can use to learn more. It will also provide you with some exercises that you can go through to refine your knowledge. 
 
 If this guide is too slow for you feel free to take to reading more in the wpilib docs, they're a great place to further your knowledge.
