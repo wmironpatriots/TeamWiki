@@ -88,7 +88,7 @@ pick bf0ae4c Dirty Commit 1 - dabeycorn
 pick 4abaa8f Dirty Commit 2 - dabeycorn
 ```
 * Then, exit the menu (it will open another one like this)
-```
+```bash
 # This is a combination of 2 commits.
 # This is the 1st commit message
 Dirty Commit 1
@@ -101,6 +101,21 @@ Dirty Commit 2
 
 ### Amending commits
 * Mistakes happen. If you need to amend the previous commit you submitted just run
-```
+```bash
 git commit --amend -m "New commit message" -s
+```
+
+## Merging
+* Before you merge a branch, you should make sure that your commits follow the guidelines and your history is clean
+* This is how you should merge:
+```bash
+# Make sure you're on the branch you want to merge
+git fetch
+git rebase origin/master
+
+git checkout master
+# if you have more than one commit, merge like this
+git merge --no-ff branch-to-merge
+# else do a normal merge
+git merge branch-to-merge
 ```
