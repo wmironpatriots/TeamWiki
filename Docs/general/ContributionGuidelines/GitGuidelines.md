@@ -34,7 +34,8 @@ git checkout -b fast-odometry/ditty_bop_
 * Commit often. Make it easier to revert when something goes wrong without loosing too much
 * Commits should be ordered logically. You add pizza toppings after you flatten the dough, not the other way around.
 ### Messages
-A commit message should summarize your change in 50 characters or less.
+* A commit message should summarize your change in 50 characters or less.
+* Should be written in the imperative present tense
 ```
 Short (50 chars or fewer) summary of changes
 
@@ -67,7 +68,39 @@ Source: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 * Before you finish a commit, look at it and think about what you would want to know about it in another year
 * **Finally**, make sure you signoff your commit. When you signoff a commit you acknowledge that you wrote this commit
 ```
-git commit -m "Fix
+git commit -m "Convert driveToPose feedback controllers to profiled" -s
 ```
 
-TODO add squash docs 
+### Squashing
+* There may be moments when you need to push an unfinished change to the upstream
+* If this happens, it's okay to make a dirty commit, however you must squash the commit when you complete the change later
+```
+# Lets say that I have 2 dirty commits I want to squash into a change
+# bf0ae4c Dirty Commit 1 - dabeycorn
+# 4abaa8f Dirty Commit 2 - dabeycorn
+
+git rebase -i HEAD~2 # We're going back 2 commits
+```
+* This will open a rebase menu in vim like this:
+```
+# Replace pick with s for the commits you want to squash
+pick bf0ae4c Dirty Commit 1 - dabeycorn
+pick 4abaa8f Dirty Commit 2 - dabeycorn
+```
+* Then, exit the menu (it will open another one like this)
+```
+# This is a combination of 2 commits.
+# This is the 1st commit message
+Dirty Commit 1
+
+# This is the 2nd commit message
+Dirty Commit 2
+```
+* Delete all the uncommented lines and write the message you want for the squashed commit
+* Exit the file and your dirty commits will be squashed
+
+### Amending commits
+* Mistakes happen. If you need to amend the previous commit you submitted just run
+```
+git commit --amend -m "New commit message" -s
+```
