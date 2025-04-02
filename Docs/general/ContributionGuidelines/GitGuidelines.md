@@ -123,6 +123,7 @@ git merge --no-ff branch-to-merge
 # else do a normal merge
 git merge branch-to-merge
 ```
+* **Remember**, you can't merge directly to master, you **must** use a Pull Request
 
 ## General Repository Etiquette
 ##### While the following rules aren't enforced, it would be nice if you did :)
