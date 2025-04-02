@@ -70,6 +70,10 @@ Source: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 ```bash
 git commit -m "Convert driveToPose feedback controllers to profiled" -s
 ```
+* If you really need to write more than 50 characters, you can write a description like this
+```bash
+git commit -m "message" -m "description"
+```
 
 ### Squashing
 * There may be moments when you need to push an unfinished change to the upstream
@@ -119,3 +123,12 @@ git merge --no-ff branch-to-merge
 # else do a normal merge
 git merge branch-to-merge
 ```
+
+## General Repository Etiquette
+##### While the following rules aren't enforced, it would be nice if you did :)
+---
+* Push your commits to upstream in groups
+    * Since we use github webhooks to post updates to discord, it clouds up the channel when you constantly push to upstream
+* [Use the co-authored feature!](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors)
+* Try to not keep a personal branch for more than 2 weeks
+* Always remember that repositories are public; While you can make jokes in commit, keep them appropriate
