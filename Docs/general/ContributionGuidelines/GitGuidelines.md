@@ -32,11 +32,11 @@ git checkout -b fast-odometry/ditty_bop_
 ## Commits
 * Each commit is a single logical change. For example, the creation of bug fix and the addition of a new command should be seperated into two different commits. **Remember, only 1 logical change per commit**
 * Commit often. Make it easier to revert when something goes wrong without loosing too much
-* Commits should be ordered logically. You add pizza toppings after you flatten the dough, not the other way around.
+* Commits should be ordered logically. You add pizza toppings to the dough after you flatten the dough, not the other way around.
 ### Messages
 * A commit message should summarize your change in 50 characters or less.
 * Should be written in the imperative present tense
-```bash
+```
 Short (50 chars or fewer) summary of changes
 
 More detailed explanatory text, if necessary. Wrap it to
