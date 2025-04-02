@@ -4,7 +4,7 @@ This guide assumes that you have good beginners knowledge of Git.
 ## Branches
 * Names should be short and descriptive
 * Words in names should be seperated with hyphens
-```
+```bash
 # Good name; simple but descriptive, follows guidelines
 git checkout -b source-align
 
@@ -16,7 +16,7 @@ git checkout -b bajablastYeehaw
 ```
 ---
 * When multiple people are working on a feature, create personal branches for each member working on feature
-```
+```bash
 # Main feature branch; This is what will eventually be merged to master
 git checkout -b fast-odometry/main
 
@@ -36,7 +36,7 @@ git checkout -b fast-odometry/ditty_bop_
 ### Messages
 * A commit message should summarize your change in 50 characters or less.
 * Should be written in the imperative present tense
-```
+```bash
 Short (50 chars or fewer) summary of changes
 
 More detailed explanatory text, if necessary. Wrap it to
@@ -67,14 +67,14 @@ Source: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 
 * Before you finish a commit, look at it and think about what you would want to know about it in another year
 * **Finally**, make sure you signoff your commit. When you signoff a commit you acknowledge that you wrote this commit
-```
+```bash
 git commit -m "Convert driveToPose feedback controllers to profiled" -s
 ```
 
 ### Squashing
 * There may be moments when you need to push an unfinished change to the upstream
 * If this happens, it's okay to make a dirty commit, however you must squash the commit when you complete the change later
-```
+```bash
 # Lets say that I have 2 dirty commits I want to squash into a change
 # bf0ae4c Dirty Commit 1 - dabeycorn
 # 4abaa8f Dirty Commit 2 - dabeycorn
@@ -82,7 +82,7 @@ git commit -m "Convert driveToPose feedback controllers to profiled" -s
 git rebase -i HEAD~2 # We're going back 2 commits
 ```
 * This will open a rebase menu in vim like this:
-```
+```bash
 # Replace pick with s for the commits you want to squash
 pick bf0ae4c Dirty Commit 1 - dabeycorn
 pick 4abaa8f Dirty Commit 2 - dabeycorn
