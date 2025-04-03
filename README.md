@@ -1,17 +1,8 @@
 ## 6423 Team Docs
 A set of resources for team 6423
 
-### Preface
-A good amount of FRC programming comes down to your ability to learn and use resources. This repository exists to not to grab your hand and explain everything, but to give you a good grasp of basic concepts and point you in the right direction to learn more.
-
-These docs are split into 2 parts.
-* Training docs (Documentation, guides, and exercises for rookie members)
-* General docs (General information)
-
-The training documentation of this repository exists to train rookies, it should be used to train rookies alongside offseason training
-The current programming lead is in charge of maintaining this repository. Please try and keep it fresh.
-
 ### Table of Contents
+* [Contribution Guidelines](./Docs/CodebaseGuidelines/Index.md)
 
 
 <!--### Preface
