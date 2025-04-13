@@ -1,9 +1,8 @@
-## 6423 Team Docs
+## 6423 Team Docsm (WIP)
 A set of resources for team 6423
 
-### Table of Contents
-* [Contribution Guidelines](./Docs/CodebaseGuidelines/Index.md)
-
+Contents
+* [Training Docs](./Docs/Training/Index.md)
 
 <!--### Preface
 The majority of FRC programming comes down to your ability to learn and use online documentation and resources. This guide won't grab your hand and guide you through everything, instead it will give you a good understanding of the basics and the resources that you can use to learn more. It will also provide you with some exercises that you can go through to refine your knowledge. 
