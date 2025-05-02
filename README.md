@@ -1,8 +1,10 @@
-## 6423 Team Docsm (WIP)
-A set of resources for team 6423
+## 6423 Team Wiki (WIP)
+A set of resources for 6423's software team.
 
 ### Contents
-* [Training Docs](./Docs/Training/Index.md): These contain all rookie training material
+* [OnBoarding](./onboarding/Index.md) ~ These pages exist to get expirenced devs familiar with our codebase.
+  * [Coding Standards](./onboarding/Standards.md)
+  * [General GitGuide](./onboarding/GitGuide.md)
 
 <!--### Preface
 The majority of FRC programming comes down to your ability to learn and use online documentation and resources. This guide won't grab your hand and guide you through everything, instead it will give you a good understanding of the basics and the resources that you can use to learn more. It will also provide you with some exercises that you can go through to refine your knowledge. 
