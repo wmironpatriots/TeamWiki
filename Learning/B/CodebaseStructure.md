@@ -1,12 +1,11 @@
 # Codebase Structure
 This doc will teach you how we structure our codebases. If you wish to follow along, you can checkout the [akit version of our 2025 codebase](https://github.com/wmironpatriots/CompetitionRobot2025/tree/junk/akitRewrite)
 
-**Common Terminology**
+### Common Terminology
 * *Directory (Dir for short)* - A folder
 * *Repository (Repo for short)* - An online storage location for our project's code
 
-**Paths**
-
+### Paths
 Lets look at a simple folder structure
 ```
 📦documents
@@ -17,7 +16,7 @@ Lets look at a simple folder structure
 ```
 The path to the `familyPhotos.png` is `documents/pictures/familyPhotos.png`
 
-## Pt. 1 (Finding the Java files)
+## Pt. 1 (Finding the Code)
 ### Root Directory
 Here's what you'll find when you first open the repo
 ```
