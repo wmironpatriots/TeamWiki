@@ -1,10 +1,13 @@
-# IronBase
->###### A robot codebase template
+# Section B Exercises
+You can complete your section B exercises in this repository.
 
-## Post-Codebase-Creation Checklist
-* [ ] Update to post-kickoff/most recent WPIlib version
-* [ ] Update to post-kickoff/most recent vendordeps
-* [ ] Push updated libs to IronBase Repo
-* [ ] Update all references to the year (LICENSE, build.gradle, etc)
-* [ ] Update `Authors.md`
-* [ ] Replace this README :)
+## Checklist
+***Remember, you should get your work code-reviewed before you click the exercise checkmark***
+* [ ] Exercise 1
+> * [ ] Create Intake hardware interface class
+> * [ ] Create real hardware interface
+* [ ] Exercise 2
+> * [ ] Create public Intake interface
+* [ ] Exercise 3
+> * [ ] Create simulated hardware interface
+> * [ ] Modify public interface

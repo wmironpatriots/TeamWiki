@@ -1,4 +1,4 @@
-// TODO Put Year Copyright (c) {year} FRC 6423 - Ward Melville Iron Patriots
+// Copyright (c) 2025 FRC 6423 - Ward Melville Iron Patriots
 // https://github.com/FIRSTTeam6423
 // 
 // Open Source Software; you can modify and/or share it under the terms of
@@ -9,6 +9,7 @@ package org.frc6423.robot;
 import static edu.wpi.first.units.Units.Seconds;
 
 import edu.wpi.first.wpilibj.DriverStation;
+import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
 import monologue.Logged;
@@ -17,8 +18,13 @@ import monologue.Monologue.MonologueConfig;
 import org.frc6423.lib.CommandRobot;
 import org.frc6423.lib.Tracer;
 import org.frc6423.robot.Constants.Flags;
+import org.frc6423.robot.subsystem.intake.Intake;
 
 public class Robot extends CommandRobot implements Logged {
+  private final XboxController driverController = new XboxController(0);
+  private final XboxController operatorController = new XboxController(1);
+
+  private final Intake intake = Intake.create();
 
   public Robot() {
     super(Flags.LOOPTIME.in(Seconds));
